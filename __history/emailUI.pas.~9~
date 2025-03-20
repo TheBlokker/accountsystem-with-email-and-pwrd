@@ -1,0 +1,45 @@
+unit emailUI;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.JSON;
+
+type
+  TForm4 = class(TForm)
+    Memo1: TMemo;
+    Label10: TLabel;
+    Button1: TButton;
+  private
+    { Private-Deklarationen }
+  public
+   procedure LoadUserData(const UserJSON: TJSONObject);
+    { Public-Deklarationen }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm4.LoadUserData(const UserJSON: TJSONObject);
+begin
+  Memo1.Lines.Clear; // Memo leeren, bevor neue Daten geladen werden
+
+  if Assigned(UserJSON) then
+  begin
+    Memo1.Lines.Add('Vorname: ' + UserJSON.GetValue<string>('Vorname', 'Nicht angegeben'));
+    Memo1.Lines.Add('Nachname: ' + UserJSON.GetValue<string>('Nachname', 'Nicht angegeben'));
+    Memo1.Lines.Add('E-Mail: ' + UserJSON.GetValue<string>('email', 'Nicht angegeben'));
+    Memo1.Lines.Add('Passwort: ' + UserJSON.GetValue<string>('pwd', 'Nicht angegeben'));
+    Memo1.Lines.Add('Geburtsdatum: ' + UserJSON.GetValue<string>('dob', 'Nicht angegeben'));
+  end
+  else
+    Memo1.Lines.Add('Fehler: Keine Daten vorhanden!');
+end;
+
+
+end.

@@ -1,0 +1,42 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 249
+  ClientWidth = 395
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 120
+    Top = 40
+    Width = 34
+    Height = 15
+    Caption = 'Label1'
+  end
+  object Label10: TLabel
+    Left = 45
+    Top = -12
+    Width = 286
+    Height = 46
+    Caption = 'Registrierung'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Showcard Gothic'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button3: TButton
+    Left = 256
+    Top = 188
+    Width = 75
+    Height = 25
+    Caption = 'Quit'
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,239 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Registiren | emailClient'
+  ClientHeight = 578
+  ClientWidth = 628
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnCreate = FormCreate
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 136
+    Top = 115
+    Width = 50
+    Height = 15
+    Caption = 'Vorname:'
+  end
+  object Label2: TLabel
+    Left = 336
+    Top = 115
+    Width = 61
+    Height = 15
+    Caption = 'Nachname:'
+  end
+  object Label3: TLabel
+    Left = 149
+    Top = 144
+    Width = 37
+    Height = 15
+    Caption = 'e-mail:'
+  end
+  object Label4: TLabel
+    Left = 136
+    Top = 238
+    Width = 50
+    Height = 15
+    Caption = 'Passwort:'
+  end
+  object LabelSecurityQuestion1: TLabel
+    Left = 192
+    Top = 264
+    Width = 235
+    Height = 15
+    Caption = 'Passwort muss mindestens 8 Zeichen haben.'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+  end
+  object LabelSecurityQuestion2: TLabel
+    Left = 192
+    Top = 285
+    Width = 292
+    Height = 15
+    Caption = 'Passwort muss GROSS- und kleinbuchstaben enthalten.'
+  end
+  object LabelSecurityQuestion3: TLabel
+    Left = 192
+    Top = 306
+    Width = 249
+    Height = 15
+    Caption = 'Passwort muss mindestens eine Zahl enthalten.'
+  end
+  object LabelSecurityQuestion4: TLabel
+    Left = 192
+    Top = 327
+    Width = 297
+    Height = 15
+    Caption = 'Passwort muss mindestens ein Sonderzeichen enthalten.'
+  end
+  object Label9: TLabel
+    Left = 68
+    Top = 358
+    Width = 118
+    Height = 15
+    Caption = 'Passwort wiederholen:'
+  end
+  object Label10: TLabel
+    Left = 192
+    Top = 24
+    Width = 286
+    Height = 46
+    Caption = 'Registrierung'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Showcard Gothic'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Image: TImage
+    Left = 463
+    Top = 141
+    Width = 23
+    Height = 23
+  end
+  object ImageCaptcha: TImage
+    Left = 184
+    Top = 400
+    Width = 169
+    Height = 105
+  end
+  object Label5: TLabel
+    Left = 359
+    Top = 400
+    Width = 44
+    Height = 15
+    Caption = 'Captcha'
+  end
+  object Label6: TLabel
+    Left = 119
+    Top = 209
+    Width = 67
+    Height = 15
+    Caption = 'Geburtstage:'
+  end
+  object EditVorname: TEdit
+    Left = 192
+    Top = 112
+    Width = 121
+    Height = 23
+    TabOrder = 0
+  end
+  object EditNachname: TEdit
+    Left = 401
+    Top = 112
+    Width = 121
+    Height = 23
+    TabOrder = 1
+  end
+  object EditEmail: TEdit
+    Left = 192
+    Top = 141
+    Width = 265
+    Height = 23
+    TabOrder = 2
+    OnChange = EditEmailChange
+  end
+  object EditPassword: TEdit
+    Left = 192
+    Top = 235
+    Width = 265
+    Height = 23
+    PasswordChar = '*'
+    TabOrder = 3
+    OnChange = EditPasswordChange
+  end
+  object EditPasswordRepeat: TEdit
+    Left = 192
+    Top = 355
+    Width = 265
+    Height = 23
+    PasswordChar = '*'
+    TabOrder = 4
+    OnChange = EditPasswordRepeatChange
+  end
+  object Button1: TButton
+    Left = 192
+    Top = 170
+    Width = 265
+    Height = 23
+    Caption = 'Stattdessen eine e-mail generieren lassen'
+    TabOrder = 5
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 231
+    Top = 545
+    Width = 75
+    Height = 25
+    Caption = #55357#56593' Login'
+    Enabled = False
+    TabOrder = 6
+  end
+  object Button3: TButton
+    Left = 336
+    Top = 545
+    Width = 75
+    Height = 25
+    Caption = 'Quit'
+    TabOrder = 7
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 463
+    Top = 237
+    Width = 40
+    Height = 20
+    Caption = #55357#56384
+    TabOrder = 8
+    OnMouseEnter = Button4MouseEnter
+    OnMouseLeave = Button4MouseLeave
+  end
+  object EditCaptcha: TEdit
+    Left = 359
+    Top = 421
+    Width = 98
+    Height = 23
+    TabOrder = 9
+  end
+  object Button5: TButton
+    Left = 359
+    Top = 450
+    Width = 98
+    Height = 25
+    Caption = #9989' Check'
+    TabOrder = 10
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 359
+    Top = 480
+    Width = 98
+    Height = 25
+    Caption = #55357#56580#65039' Neues Laden'
+    TabOrder = 11
+    OnClick = Button6Click
+  end
+  object DateTimePickerBirthday: TDateTimePicker
+    Left = 192
+    Top = 206
+    Width = 265
+    Height = 23
+    Date = 45735.000000000000000000
+    Time = 45735.000000000000000000
+    MinDate = 61.000000000000000000
+    TabOrder = 12
+  end
+end
