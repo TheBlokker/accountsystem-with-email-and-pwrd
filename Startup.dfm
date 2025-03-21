@@ -43,16 +43,16 @@ object Form3: TForm3
   object Label3: TLabel
     Left = 24
     Top = 146
-    Width = 341
+    Width = 345
     Height = 165
     Caption = 
-      'Im Grunde handelt sich Program, '#13#10'in dem man ein Account erstell' +
-      'en kann.'#13#10'Es gibt die M'#246'glichkeit sich anzumelden oder zu regist' +
-      'ieren.'#13#10#13#10'Es gibt auch Regeln:'#13#10'1. Bitte gehen Sie mit dem Porga' +
-      'mm liebevoll um.'#13#10'2. Um sich zu registieren, muss man mindestens' +
-      ' 16 Jahre alt sein.'#13#10'3. Um sein Passwort zu sehen, muss man '#252'ber' +
-      ' den '#13#10'    Augenbutton mit der Maus gehen.'#13#10#13#10'Ansonsten Viel Spa' +
-      #223'! :)'
+      'Im Grunde handelt es sich um ein Programm, '#13#10'in dem man einen Ac' +
+      'count erstellen kann.'#13#10'Es gibt die M'#246'glichkeit sich anzumelden o' +
+      'der zu registrieren.'#13#10#13#10'Es gibt Regeln:'#13#10'1. Bitte gehen Sie mit ' +
+      'dem Porgamm liebevoll um.'#13#10'2. Um sich zu registrieren, muss man ' +
+      'mindestens 16 Jahre alt sein.'#13#10'3. Um sein Passwort zu sehen, mus' +
+      's man '#252'ber den '#13#10'    Augenbutton mit der Maus gehen.'#13#10#13#10'Ansonste' +
+      'n Viel Spa'#223'! :)'
   end
   object Button1: TButton
     Left = 24
